@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórum de RPG Medieval</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Menu Lateral -->
+        <div class="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#" onclick="mostrarConteudo('historia')">História da Campanha</a></li>
+                <li><a href="#" onclick="mostrarConteudo('mapa')">Mapa</a></li>
+                <li><a href="#" onclick="mostrarConteudo('racas')">Raças</a></li>
+                <li><a href="#" onclick="mostrarConteudo('curiosidades')">Curiosidades</a></li>
+                <li><a href="#" onclick="mostrarConteudo('divindades')">Divindades</a></li>
+            </ul>
+        </div>
+
+        <!-- Conteúdo Principal -->
+        <div class="conteudo" id="conteudo">
+            <h1>Bem-vindo ao Fórum de RPG!</h1>
+            <p>Selecione uma opção no menu ao lado para começar.</p>
+        </div>
+    </div>
+
+    <!-- Música de Fundo -->
+    <audio id="musica" loop autoplay>
+        <source src="taverna.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <!-- Botão de Controle de Áudio -->
+    <button id="botao-musica" onclick="controlarMusica()">🎵 Desligar Música</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
