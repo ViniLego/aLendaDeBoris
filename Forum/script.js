@@ -6,7 +6,12 @@ function expandirRaca(id) {
         detalhes.style.display = "none";
     }
 }
-
+// Inicia a música quando a página carrega (se permitido)
+window.onload = function() {
+    const musica = document.getElementById('musica');
+    musica.volume = 0.3; // Volume baixo por padrão
+    musica.play().catch(e => console.log("Autoplay bloqueado. Clique em qualquer lugar para tocar."));
+};
 
 // Função para controlar a música de fundo
 function controlarMusica() {
